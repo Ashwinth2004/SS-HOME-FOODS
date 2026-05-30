@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" width="300" height="320" role="img" aria-label="SS Home Foods logo">
+  <!-- House shape -->
+  <path fill="#27ae60" d="M150 18 L24 132 v6 a22 22 0 0 0 22 22 h6 v118 a20 20 0 0 0 20 20 h156 a20 20 0 0 0 20-20 V160 h6 a22 22 0 0 0 22-22 v-6 L150 18 Z M150 58 l86 78 v140 a4 4 0 0 1-4 4 H68 a4 4 0 0 1-4-4 V136 l86-78 Z"/>
+  <!-- Plate circle -->
+  <circle cx="150" cy="190" r="62" fill="#ffffff"/>
+  <!-- Fork -->
+  <g fill="#27ae60">
+    <rect x="121" y="150" width="6" height="36" rx="3"/>
+    <rect x="131" y="150" width="6" height="36" rx="3"/>
+    <rect x="141" y="150" width="6" height="36" rx="3"/>
+    <path d="M121 184 h26 a4 4 0 0 1 4 4 v6 a17 17 0 0 1-17 17 h-0 a17 17 0 0 1-17-17 v-6 a4 4 0 0 1 4-4 Z"/>
+    <rect x="129" y="205" width="10" height="36" rx="5"/>
+  </g>
+  <!-- Spoon -->
+  <g fill="#27ae60">
+    <ellipse cx="178" cy="178" rx="18" ry="26"/>
+    <rect x="173" y="200" width="10" height="42" rx="5"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="150" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="40" fill="#2ecc71" letter-spacing="1">SS HOME FOODS</text>
+</svg>

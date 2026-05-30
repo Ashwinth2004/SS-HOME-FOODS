@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Menu — SS Home Foods | Veg & Non-Veg Breakfast, Lunch, Dinner (Mon–Fri)</title>
+  <meta name="description" content="SS Home Foods weekly menu — fresh South Indian veg & non-veg breakfast, lunch and dinner from Monday to Friday. Authentic Tamil Nadu home meals, Anna Nagar West Chennai." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">🎉 Flat <span>20% OFF</span> on your first order above ₹300 &nbsp;•&nbsp; Menu rotates every week</div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="SS Home Foods" />
+        <span class="brand-text"><strong>SS HOME FOODS</strong><small>Namma Veetu Samayal</small></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#plans">Subscription</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li class="nav-cta"><a class="btn btn--primary" href="#" data-open-sub>Subscribe ₹9,999</a></li>
+      </ul>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a> / Menu</div>
+      <h1>Our Weekly Menu</h1>
+      <p>Fresh home-cooked veg & non-veg meals — Monday to Friday · Breakfast, Lunch & Dinner</p>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Day Tabs -->
+      <div class="day-tabs">
+        <button class="day-tab active" data-day="mon">Monday</button>
+        <button class="day-tab" data-day="tue">Tuesday</button>
+        <button class="day-tab" data-day="wed">Wednesday</button>
+        <button class="day-tab" data-day="thu">Thursday</button>
+        <button class="day-tab" data-day="fri">Friday</button>
+      </div>
+
+      <!-- Veg / Non-veg filter -->
+      <div class="diet-toggle">
+        <button class="active" data-diet="all">🍽️ All</button>
+        <button class="veg" data-diet="veg"><span class="dot veg" style="width:14px;height:14px"></span> Veg</button>
+        <button class="nonveg" data-diet="nonveg"><span class="dot nonveg" style="width:14px;height:14px"></span> Non-Veg</button>
+      </div>
+
+      <!-- ================= MONDAY ================= -->
+      <div class="day-panel active" data-day="mon">
+        <div class="meal-grid">
+          <!-- Breakfast -->
+          <div class="meal">
+            <div class="meal-top breakfast"><span>🌅 Breakfast</span><span class="time">7:00 – 10:00 AM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Idli &amp; Sambar</b><small>Soft steamed idlis, hot sambar, coconut chutney</small></div></div>
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Ven Pongal</b><small>Ghee pongal with coconut chutney</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Egg Dosa</b><small>Crispy dosa topped with egg &amp; kara chutney</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹60 <small>/ plate</small></span></div>
+          </div>
+          <!-- Lunch -->
+          <div class="meal">
+            <div class="meal-top lunch"><span>🌞 Lunch</span><span class="time">12:00 – 3:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Sambar Sadam Thali</b><small>Sambar rice, beans poriyal, rasam, curd, appalam</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Chicken Curry Meals</b><small>Steamed rice, chicken curry, rasam, poriyal, curd</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹90 <small>/ veg · ₹130 non-veg</small></span></div>
+          </div>
+          <!-- Dinner -->
+          <div class="meal">
+            <div class="meal-top dinner"><span>🌙 Dinner</span><span class="time">7:00 – 10:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Chapati &amp; Veg Kurma</b><small>3 soft chapatis, kurma, dal tadka</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Chicken Chettinad &amp; Parotta</b><small>2 parottas with spicy chettinad chicken</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹85 <small>/ veg · ₹135 non-veg</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= TUESDAY ================= -->
+      <div class="day-panel" data-day="tue">
+        <div class="meal-grid">
+          <div class="meal">
+            <div class="meal-top breakfast"><span>🌅 Breakfast</span><span class="time">7:00 – 10:00 AM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Medu Vada &amp; Sambar</b><small>Crispy vada, sambar, coconut chutney</small></div></div>
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Rava Upma</b><small>Semolina upma with chutney</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Egg Burji &amp; Idiyappam</b><small>String hoppers with spicy egg burji</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹60 <small>/ plate</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top lunch"><span>🌞 Lunch</span><span class="time">12:00 – 3:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Lemon Rice Thali</b><small>Lemon rice, potato poriyal, sambar, rasam, curd</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Fish Curry Meals</b><small>Steamed rice, nattu fish curry, rasam, cabbage poriyal</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹90 <small>/ veg · ₹140 non-veg</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top dinner"><span>🌙 Dinner</span><span class="time">7:00 – 10:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Idiyappam &amp; Veg Stew</b><small>String hoppers with coconut milk veg stew</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Egg Kothu Parotta</b><small>Shredded parotta tossed with egg &amp; masala</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹85 <small>/ veg · ₹120 non-veg</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= WEDNESDAY ================= -->
+      <div class="day-panel" data-day="wed">
+        <div class="meal-grid">
+          <div class="meal">
+            <div class="meal-top breakfast"><span>🌅 Breakfast</span><span class="time">7:00 – 10:00 AM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Masala Dosa</b><small>Crispy dosa, potato masala, sambar, chutney</small></div></div>
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Poori Masala</b><small>2 pooris with potato masala</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Egg Appam</b><small>Soft egg appam with coconut milk</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹65 <small>/ plate</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top lunch"><span>🌞 Lunch</span><span class="time">12:00 – 3:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Veg Biryani Combo</b><small>Vegetable biryani, raita, boiled egg optional, curd rice</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Mutton Curry Meals</b><small>Steamed rice, country mutton curry, rasam, poriyal</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹110 <small>/ veg · ₹170 non-veg</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top dinner"><span>🌙 Dinner</span><span class="time">7:00 – 10:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Chapati &amp; Channa Masala</b><small>3 chapatis with North Indian channa masala</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Chicken 65 &amp; Fried Rice</b><small>Veg fried rice with spicy chicken 65</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹90 <small>/ veg · ₹140 non-veg</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= THURSDAY ================= -->
+      <div class="day-panel" data-day="thu">
+        <div class="meal-grid">
+          <div class="meal">
+            <div class="meal-top breakfast"><span>🌅 Breakfast</span><span class="time">7:00 – 10:00 AM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Sambar Vada &amp; Pongal</b><small>Vada in sambar with ven pongal</small></div></div>
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Kara Dosa</b><small>Spicy dosa with onion &amp; chutney</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Egg Kalakki &amp; Idli</b><small>Soft idlis with half-boil egg kalakki</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹60 <small>/ plate</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top lunch"><span>🌞 Lunch</span><span class="time">12:00 – 3:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Tomato Rice Thali</b><small>Tomato rice, curd rice, poriyal, sambar, rasam</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Chicken Biryani Combo</b><small>Home-style chicken biryani, raita, boiled egg, brinjal curry</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹90 <small>/ veg · ₹150 non-veg</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top dinner"><span>🌙 Dinner</span><span class="time">7:00 – 10:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Dosa &amp; Sambar</b><small>2 dosas, sambar, two chutneys</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Pepper Chicken &amp; Parotta</b><small>2 parottas with dry pepper chicken</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹80 <small>/ veg · ₹135 non-veg</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FRIDAY ================= -->
+      <div class="day-panel" data-day="fri">
+        <div class="meal-grid">
+          <div class="meal">
+            <div class="meal-top breakfast"><span>🌅 Breakfast</span><span class="time">7:00 – 10:00 AM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Poori &amp; Potato Masala</b><small>3 fluffy pooris with masala</small></div></div>
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Ghee Roast &amp; Chutney</b><small>Crispy ghee dosa with chutney &amp; sambar</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Egg Dosa Special</b><small>Double egg dosa with kara chutney</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹65 <small>/ plate</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top lunch"><span>🌞 Lunch</span><span class="time">12:00 – 3:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Friday Special Veg Thali</b><small>Coconut rice, avial, sambar, rasam, payasam (dessert)</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Special Chicken Biryani</b><small>Friday dum biryani, brinjal curry, egg, payasam</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹120 <small>/ veg · ₹180 non-veg</small></span></div>
+          </div>
+          <div class="meal">
+            <div class="meal-top dinner"><span>🌙 Dinner</span><span class="time">7:00 – 10:00 PM</span></div>
+            <div class="meal-body">
+              <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Idiyappam &amp; Kurma</b><small>String hoppers with veg kurma</small></div></div>
+              <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Fish Fry &amp; Curd Rice</b><small>Nattu fish fry with curd rice &amp; pickle</small></div></div>
+            </div>
+            <div class="meal-foot"><span class="price">₹90 <small>/ veg · ₹150 non-veg</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note + CTA -->
+      <div style="text-align:center;margin-top:46px">
+        <p style="color:var(--muted);max-width:640px;margin:0 auto 22px">🌿 Menu rotates weekly to keep meals exciting · Custom diet, Jain &amp; no-onion-no-garlic options available on request · Subscribe for the full day and save up to 26%.</p>
+        <a class="btn btn--primary" href="#" data-open-sub>🍱 Subscribe — ₹9,999 / month</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="SS Home Foods" style="height:54px" />
+          <span class="brand-text"><strong>SS HOME FOODS</strong><small>Namma Veetu Samayal</small></span>
+        </a>
+        <p>A taste of our tradition. Fresh, home-style South Indian veg & non-veg meals delivered with love across Anna Nagar West, Chennai.</p>
+        <div class="socials"><a href="#">🟢</a><a href="#">📷</a><a href="#">👍</a><a href="#">📞</a></div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Weekly Menu</a></li>
+          <li><a href="index.html#plans">Subscription</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Meals</h5>
+        <ul>
+          <li>🌅 Breakfast (7–10 AM)</li>
+          <li>🌞 Lunch (12–3 PM)</li>
+          <li>🌙 Dinner (7–10 PM)</li>
+          <li>🥗 Veg & Non-Veg</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Reach Us</h5>
+        <ul>
+          <li>📍 8, 1st St, near MMM Hospital, Collector Nagar, J J Nagar, Anna Nagar West Extension, Chennai 600037</li>
+          <li>📞 <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li>✉️ <a href="mailto:hello@sshomefoods.in">hello@sshomefoods.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year">2026</span> SS Home Foods · Namma Veetu Samayal · All rights reserved.</div>
+  </footer>
+
+  <button class="sub-fab" data-open-sub aria-label="Subscribe">🍱 <span class="lbl">Subscribe ₹9,999</span></button>
+
+  <!-- SUBSCRIPTION MODAL -->
+  <div class="modal-overlay" id="subModal" role="dialog" aria-modal="true" aria-label="Monthly subscription offer">
+    <div class="modal">
+      <button class="modal-close" data-close-sub aria-label="Close">×</button>
+      <div class="modal-left">
+        <span class="tag">Best Value Plan</span>
+        <div class="big-price">₹9,999<small>/month</small></div>
+        <div class="strike">₹13,500</div>
+        <ul>
+          <li>Breakfast + Lunch + Dinner</li>
+          <li>Monday to Friday — 5 days</li>
+          <li>Veg & Non-veg combo</li>
+          <li>Free delivery up to 3 km</li>
+          <li>Pause or skip anytime</li>
+        </ul>
+      </div>
+      <div class="modal-right">
+        <h3>Save 26% with our Full-Day Plan 🍱</h3>
+        <p>Get all three home-cooked meals delivered hot, every weekday — for less than ₹70 per meal. Limited slots near MMM Hospital, Anna Nagar West.</p>
+        <a class="btn btn--primary" href="contact.html" data-close-sub>Subscribe Now →</a>
+        <a class="btn btn--ghost" href="#" data-close-sub>Keep Browsing Menu</a>
+        <p class="form-note" style="text-align:center;margin-top:8px">No lock-in · Cancel anytime</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
