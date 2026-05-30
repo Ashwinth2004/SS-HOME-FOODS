@@ -167,14 +167,19 @@ a { text-decoration: none; color: inherit; }
 .hero-stats div strong { font-size: 1.7rem; font-weight: 800; display: block; }
 .hero-stats div span { font-size: .82rem; opacity: .9; }
 
-.hero-plate { position: relative; display: grid; place-items: center; }
-.hero-plate .ring {
-  width: min(460px, 86vw); aspect-ratio: 1; border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, #fff9ee, #ffe6b0 70%, #f6d48a);
-  box-shadow: 0 34px 80px rgba(0,0,0,.32), inset 0 0 0 12px rgba(255,255,255,.55);
-  display: grid; place-items: center; animation: floaty 6s ease-in-out infinite;
+.hero-plate { position: relative; display: grid; place-items: center; padding: 18px 0; }
+.hero-plate::before {
+  content: ""; position: absolute; width: 96%; aspect-ratio: 1.5/1; border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,.28), rgba(255,255,255,0) 68%);
+  z-index: 0;
 }
-.hero-plate .ring img { width: 92%; height: auto; filter: drop-shadow(0 12px 22px rgba(0,0,0,.22)); }
+.leaf-wrap {
+  position: relative; z-index: 1; width: min(640px, 100%);
+  animation: sway 7s ease-in-out infinite;
+  filter: drop-shadow(0 22px 34px rgba(0,0,0,.28));
+}
+.leaf-wrap img { width: 100%; height: auto; display: block; }
+@keyframes sway { 0%,100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-12px) rotate(1deg); } }
 @keyframes spinSlow { to { transform: rotate(360deg); } }
 .float-card {
   position: absolute; background: #fff; color: var(--ink);
