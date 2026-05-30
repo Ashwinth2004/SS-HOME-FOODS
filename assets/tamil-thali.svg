@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520" role="img" aria-label="Traditional Tamil Nadu banana leaf meals">
+  <defs>
+    <radialGradient id="leaf" cx="42%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#6cc56f"/>
+      <stop offset="55%" stop-color="#3da955"/>
+      <stop offset="100%" stop-color="#2c8a45"/>
+    </radialGradient>
+    <radialGradient id="rice" cx="40%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#f3efe2"/>
+      <stop offset="100%" stop-color="#e4ddca"/>
+    </radialGradient>
+    <radialGradient id="sambar" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#f6a83c"/><stop offset="100%" stop-color="#d97812"/></radialGradient>
+    <radialGradient id="rasam" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#e8573a"/><stop offset="100%" stop-color="#c12c1c"/></radialGradient>
+    <radialGradient id="kootu" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#cdd95e"/><stop offset="100%" stop-color="#9aa83a"/></radialGradient>
+    <radialGradient id="payasam" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#f7e6c0"/><stop offset="100%" stop-color="#e3c587"/></radialGradient>
+    <radialGradient id="poriyal" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#57b24a"/><stop offset="100%" stop-color="#358a2c"/></radialGradient>
+    <radialGradient id="curd" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#eef0ea"/></radialGradient>
+    <radialGradient id="papad" cx="42%" cy="38%" r="70%"><stop offset="0%" stop-color="#f3e2b4"/><stop offset="100%" stop-color="#d9b974"/></radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e9edf0"/><stop offset="100%" stop-color="#b9c2c9"/></linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1e5a30" flood-opacity="0.25"/></filter>
+  </defs>
+
+  <!-- Banana leaf plate -->
+  <g filter="url(#soft)">
+    <ellipse cx="260" cy="266" rx="244" ry="226" fill="url(#leaf)"/>
+    <ellipse cx="260" cy="266" rx="244" ry="226" fill="none" stroke="#1f7339" stroke-width="6" opacity="0.5"/>
+    <!-- midrib + veins -->
+    <line x1="34" y1="266" x2="486" y2="266" stroke="#2a8043" stroke-width="3" opacity="0.45"/>
+    <g stroke="#2a8043" stroke-width="2" opacity="0.28" fill="none">
+      <path d="M260 266 L120 150"/><path d="M260 266 L260 70"/><path d="M260 266 L400 150"/>
+      <path d="M260 266 L120 382"/><path d="M260 266 L260 462"/><path d="M260 266 L400 382"/>
+    </g>
+  </g>
+
+  <!-- Center rice mound -->
+  <g>
+    <ellipse cx="260" cy="280" rx="82" ry="62" fill="url(#rice)"/>
+    <ellipse cx="260" cy="262" rx="70" ry="48" fill="#ffffff" opacity="0.85"/>
+    <!-- ghee well + sambar drizzle -->
+    <ellipse cx="260" cy="270" rx="22" ry="15" fill="#f4b942" opacity="0.9"/>
+    <circle cx="246" cy="266" r="3" fill="#d97812"/><circle cx="272" cy="276" r="2.5" fill="#d97812"/>
+  </g>
+
+  <!-- Rising steam (animated) -->
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.0">
+    <path d="M236 226 q-12 -26 4 -50 q12 -20 0 -42">
+      <animate attributeName="opacity" values="0;0.7;0" dur="3.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 10; 0 -34" dur="3.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M284 226 q12 -26 -4 -50 q-12 -20 0 -42">
+      <animate attributeName="opacity" values="0;0.6;0" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 10; 0 -38" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M260 220 q-8 -24 2 -48 q10 -18 -2 -40">
+      <animate attributeName="opacity" values="0;0.55;0" dur="3.0s" begin="1.1s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 10; 0 -40" dur="3.0s" begin="1.1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Side dishes (katori bowls) arranged around the leaf -->
+  <!-- helper bowl look: steel ring + colored fill + sheen -->
+  <g>
+    <!-- Sambar (top) -->
+    <g transform="translate(260,118)"><circle r="44" fill="url(#steel)"/><circle r="36" fill="url(#sambar)"/><ellipse cx="-12" cy="-12" rx="14" ry="8" fill="#fff" opacity="0.25"/></g>
+    <!-- Rasam (top-right) -->
+    <g transform="translate(394,193)"><circle r="42" fill="url(#steel)"/><circle r="34" fill="url(#rasam)"/><ellipse cx="-11" cy="-11" rx="13" ry="7" fill="#fff" opacity="0.22"/></g>
+    <!-- Kootu (bottom-right) -->
+    <g transform="translate(394,343)"><circle r="42" fill="url(#steel)"/><circle r="34" fill="url(#kootu)"/><ellipse cx="-11" cy="-11" rx="13" ry="7" fill="#fff" opacity="0.25"/></g>
+    <!-- Payasam (bottom) -->
+    <g transform="translate(260,418)"><circle r="44" fill="url(#steel)"/><circle r="36" fill="url(#payasam)"/><circle cx="-8" cy="-6" r="3" fill="#caa75e"/><circle cx="8" cy="4" r="3" fill="#caa75e"/><circle cx="-2" cy="10" r="2.5" fill="#caa75e"/></g>
+    <!-- Poriyal (bottom-left) -->
+    <g transform="translate(126,343)"><circle r="42" fill="url(#steel)"/><circle r="34" fill="url(#poriyal)"/><circle cx="-6" cy="-4" r="3" fill="#2c6f24"/><circle cx="9" cy="6" r="3" fill="#2c6f24"/></g>
+    <!-- Curd (left) -->
+    <g transform="translate(126,193)"><circle r="42" fill="url(#steel)"/><circle r="34" fill="url(#curd)"/><ellipse cx="-11" cy="-11" rx="13" ry="7" fill="#fff" opacity="0.5"/></g>
+  </g>
+
+  <!-- Appalam / papad leaning at top-left -->
+  <g transform="translate(150,120) rotate(-12)">
+    <ellipse cx="0" cy="0" rx="48" ry="46" fill="url(#papad)" stroke="#c9a85e" stroke-width="2"/>
+    <g fill="#bb8f3f" opacity="0.6"><circle cx="-14" cy="-8" r="2"/><circle cx="10" cy="-14" r="2"/><circle cx="16" cy="8" r="2"/><circle cx="-6" cy="14" r="2"/><circle cx="-20" cy="10" r="1.6"/></g>
+  </g>
+
+  <!-- Lemon wedge + curry leaves garnish near rice -->
+  <g transform="translate(330,300)">
+    <path d="M0 0 a22 22 0 0 1 22 22 z" fill="#f4d03f" stroke="#d9b400" stroke-width="2"/>
+    <path d="M2 4 a18 18 0 0 1 16 16" fill="none" stroke="#fff7cc" stroke-width="2" opacity="0.7"/>
+  </g>
+  <g fill="#2f8a3a">
+    <ellipse cx="196" cy="318" rx="8" ry="4" transform="rotate(-30 196 318)"/>
+    <ellipse cx="210" cy="326" rx="8" ry="4" transform="rotate(20 210 326)"/>
+  </g>
+</svg>
