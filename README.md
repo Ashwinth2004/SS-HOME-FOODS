@@ -6,30 +6,30 @@ A professional, mobile-friendly **static website** for **SS Home Foods**, a home
 
 ## ✨ Features
 
-- **3 pages** — Home, Weekly Menu, Contact
-- **Weekly menu** — Monday → Friday, with **Veg & Non-Veg** options for **Breakfast, Lunch & Dinner** (Indian thali / meals style)
-- **Interactive menu** — day tabs + Veg/Non-Veg filter
-- **Subscription pop-up** — auto-opens once, centre-screen, ₹9,999/month full-day plan (Breakfast + Lunch + Dinner)
+- **3 pages** — Home, Menu, Contact
+- **Menu** — served Monday → Saturday, **Veg daily** and **Non-Veg on Wednesdays** (lunch & dinner only) for **Breakfast, Lunch & Dinner**; menu rotates daily
+- **Interactive menu** — Breakfast / Lunch / Dinner tabs + Veg/Non-Veg filter
+- **Subscription pop-up** — auto-opens once, centre-screen, ₹4,999/month full-day plan (Breakfast + Lunch + Dinner)
 - **Auto-sliding Google-style reviews** carousel (with prev/next + dots, pauses on hover)
 - **Comparison table** vs other home-food services
 - **Google Maps embed** of the kitchen location
-- **Delivery info** — free up to 3 km
+- **Delivery info** — available within 3 km (extra charges)
 - **Fully responsive** with hamburger navigation for mobile
-- Custom **SVG logo** recreated to match the brand (green house + plate)
+- Official **brand logo** (`assets/logo.jpeg`) shown on a 1:1 white rounded tile
 
 ## 📍 Address
 
-8, 1st St, near MMM Hospital, Collector Nagar, J J Nagar, Anna Nagar West Extension, Chennai, Tamil Nadu 600037
+No.8, 1st Street, Collector Nagar, Anna Nagar West Extn, Chennai – 600 101
 
 ## 📂 Structure
 
 ```
 .
 ├── index.html        # Home
-├── menu.html         # Weekly menu (Mon–Fri, Veg/Non-Veg, B/L/D)
+├── menu.html         # Menu (Mon–Sat, Veg daily / Non-Veg Wed, B/L/D)
 ├── contact.html      # Contact + Google Map + enquiry form
 ├── assets/
-│   └── logo.svg
+│   └── logo.jpeg
 ├── css/
 │   └── style.css
 └── js/
@@ -54,8 +54,8 @@ python -m http.server 8080
 
 ## 🔧 To customise
 
-- **Phone/email:** replace `+91 00000 00000` and `hello@sshomefoods.in` across the HTML files.
-- **Logo:** swap `assets/logo.svg` with your real logo (keep the same filename, or update the `<img src>` references).
+- **Phone/email:** currently `+91 81226 29433` and `contact@sshomefoods.in` across the HTML files.
+- **Logo:** swap `assets/logo.jpeg` with your real logo (keep the same filename, or update the `<img src>` references).
 - **Prices / dishes:** edit the meal cards in `menu.html`.
 - **Reviews:** edit the `.review` blocks in `index.html`.
 

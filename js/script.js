@@ -69,50 +69,16 @@
     }, 6000);
   }
 
-  /* ---------- Reviews Auto Slider ---------- */
-  var track = document.getElementById("reviewTrack");
-  if (track) {
-    var slides = track.children.length;
-    var idx = 0;
-    var dotsWrap = document.getElementById("reviewDots");
-    var timer;
-
-    // build dots
-    if (dotsWrap) {
-      for (var i = 0; i < slides; i++) {
-        var b = document.createElement("button");
-        b.setAttribute("aria-label", "Go to review " + (i + 1));
-        (function (n) { b.addEventListener("click", function () { go(n); restart(); }); })(i);
-        dotsWrap.appendChild(b);
-      }
-    }
-    var dots = dotsWrap ? dotsWrap.children : [];
-
-    function render() {
-      track.style.transform = "translateX(-" + idx * 100 + "%)";
-      for (var d = 0; d < dots.length; d++) {
-        dots[d].classList.toggle("active", d === idx);
-      }
-    }
-    function go(n) { idx = (n + slides) % slides; render(); }
-    function next() { go(idx + 1); }
-    function prev() { go(idx - 1); }
-    function start() { timer = setInterval(next, 4500); }
-    function restart() { clearInterval(timer); start(); }
-
-    var nextBtn = document.getElementById("reviewNext");
-    var prevBtn = document.getElementById("reviewPrev");
-    nextBtn && nextBtn.addEventListener("click", function () { next(); restart(); });
-    prevBtn && prevBtn.addEventListener("click", function () { prev(); restart(); });
-
-    var sliderEl = document.getElementById("reviewSlider");
-    if (sliderEl) {
-      sliderEl.addEventListener("mouseenter", function () { clearInterval(timer); });
-      sliderEl.addEventListener("mouseleave", start);
-    }
-
-    render();
-    start();
+  /* ---------- Reviews: seamless right-to-left marquee ---------- */
+  // Duplicate the review cards once so the CSS translateX(-50%) loop is seamless.
+  var marquee = document.getElementById("reviewMarquee");
+  if (marquee) {
+    var originals = Array.prototype.slice.call(marquee.children);
+    originals.forEach(function (node) {
+      var clone = node.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      marquee.appendChild(clone);
+    });
   }
 
   /* ---------- Menu: Day Tabs ---------- */
