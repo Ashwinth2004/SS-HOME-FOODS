@@ -8,7 +8,7 @@
   <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -29,7 +29,7 @@
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="index.html#plans">Subscription</a></li>
         <li><a href="index.html#reviews">Reviews</a></li>
-        <li class="nav-cta"><a class="btn btn--primary" href="#" data-open-sub>Subscribe ₹4,999</a></li>
+        <li class="nav-cta"><a class="btn btn--primary" href="#" data-open-sub>Subscribe ₹3,899</a></li>
       </ul>
     </div>
     <div class="nav-overlay" id="navOverlay"></div>
@@ -84,11 +84,11 @@
           <div style="width:100%">
             <h4>Serving Hours <small style="font-weight:500;color:var(--muted)">(come &amp; collect)</small></h4>
             <ul class="hours-list">
-              <li><span>Breakfast</span><span>8:00 AM – 10:00 AM</span></li>
               <li><span>Lunch</span><span>12:00 PM – 2:00 PM</span></li>
               <li><span>Dinner</span><span>7:00 PM – 9:00 PM</span></li>
               <li><span>Days</span><span>Monday – Saturday</span></li>
               <li><span>Non-Veg</span><span>Wednesdays only</span></li>
+              <li><span>Breakfast</span><span>Not available</span></li>
             </ul>
           </div>
         </div>
@@ -109,10 +109,9 @@
               <div class="field">
                 <label for="meal">Meal</label>
                 <select id="meal">
-                  <option>Breakfast</option>
                   <option>Lunch</option>
                   <option>Dinner</option>
-                  <option>Full Day Plan (₹4,999)</option>
+                  <option>Lunch + Dinner Plan (₹3,899)</option>
                 </select>
               </div>
               <div class="field">
@@ -182,10 +181,10 @@
       <div>
         <h5>Meals</h5>
         <ul>
-          <li>🌅 Breakfast (8–10 AM)</li>
           <li>🌞 Lunch (12–2 PM)</li>
           <li>🌙 Dinner (7–9 PM)</li>
           <li>🥗 Veg daily · Non-veg Wed</li>
+          <li>🚫 No breakfast service</li>
         </ul>
       </div>
       <div>
@@ -197,7 +196,10 @@
         </ul>
       </div>
     </div>
-    <div class="container footer-bottom">© <span id="year">2026</span> SS Home Foods · Namma Veetu Samayal · All rights reserved.</div>
+    <div class="container footer-bottom">
+      <div class="footer-tamil">வாழ்க வளமுடன்</div>
+      © <span id="year">2026</span> SS Home Foods · Namma Veetu Samayal · All rights reserved.
+    </div>
   </footer>
 
   <!-- ================= FLOATING WHATSAPP + CALL ================= -->
@@ -210,7 +212,7 @@
     </a>
   </div>
 
-  <button class="sub-fab" data-open-sub aria-label="Subscribe">🍱 <span class="lbl">Subscribe ₹4,999</span></button>
+  <button class="sub-fab" data-open-sub aria-label="Subscribe">🍱 <span class="lbl">Subscribe ₹3,899</span></button>
 
   <!-- SUBSCRIPTION MODAL -->
   <div class="modal-overlay" id="subModal" role="dialog" aria-modal="true" aria-label="Monthly subscription offer">
@@ -218,10 +220,10 @@
       <button class="modal-close" data-close-sub aria-label="Close">×</button>
       <div class="modal-left">
         <span class="tag">Best Value Plan</span>
-        <div class="big-price">₹4,999<small>/month</small></div>
-        <div class="strike">₹6,500</div>
+        <div class="big-price">₹3,899<small>/month</small></div>
+        <div class="strike">₹5,200</div>
         <ul>
-          <li>Breakfast + Lunch + Dinner</li>
+          <li>Lunch + Dinner (no breakfast)</li>
           <li>Monday to Saturday — 6 days</li>
           <li>Veg daily · Non-veg on Wednesdays</li>
           <li>Delivery available within 3 km (extra)</li>
@@ -229,8 +231,8 @@
         </ul>
       </div>
       <div class="modal-right">
-        <h3>Save big with our Full-Day Plan 🍱</h3>
-        <p>Get all three home-cooked meals fresh, every day Monday to Saturday — for less than ₹70 per meal. Limited slots in Anna Nagar West Extension.</p>
+        <h3>Save big with our Lunch + Dinner Plan 🍱</h3>
+        <p>Get both home-cooked meals — lunch and dinner — fresh every day Monday to Saturday for great value. Breakfast is not available. Limited slots in Anna Nagar West Extension.</p>
         <a class="btn btn--primary" href="#contactForm" data-close-sub>Subscribe Now →</a>
         <a class="btn btn--ghost" href="menu.html" data-close-sub>See This Week's Menu</a>
         <p class="form-note" style="text-align:center;margin-top:8px">No lock-in · Cancel anytime</p>

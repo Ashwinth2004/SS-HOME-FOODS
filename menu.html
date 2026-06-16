@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Menu — SS Home Foods | Veg Breakfast, Lunch & Dinner (Non-Veg on Wednesdays)</title>
-  <meta name="description" content="SS Home Foods menu — fresh South Indian veg breakfast, lunch and dinner served Monday to Saturday. Non-veg on Wednesdays (lunch & dinner). Menu rotates daily. Anna Nagar West, Chennai." />
+  <title>Our Menu — SS Home Foods | Veg Lunch & Dinner (Non-Veg on Wednesdays)</title>
+  <meta name="description" content="SS Home Foods menu — fresh South Indian veg lunch and dinner served Monday to Saturday. Non-veg on Wednesdays. Breakfast not available. Menu rotates daily. Anna Nagar West, Chennai." />
   <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -29,7 +29,7 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="index.html#plans">Subscription</a></li>
         <li><a href="index.html#reviews">Reviews</a></li>
-        <li class="nav-cta"><a class="btn btn--primary" href="#" data-open-sub>Subscribe ₹4,999</a></li>
+        <li class="nav-cta"><a class="btn btn--primary" href="#" data-open-sub>Subscribe ₹3,899</a></li>
       </ul>
     </div>
     <div class="nav-overlay" id="navOverlay"></div>
@@ -40,7 +40,7 @@
     <div class="container">
       <div class="crumbs"><a href="index.html">Home</a> / Menu</div>
       <h1>Our Menu</h1>
-      <p>Fresh home-cooked meals — Monday to Saturday · Breakfast, Lunch & Dinner · Non-veg on Wednesdays</p>
+      <p>Fresh home-cooked meals — Monday to Saturday · Lunch & Dinner · Non-veg on Wednesdays</p>
     </div>
   </section>
 
@@ -53,10 +53,12 @@
         🔄 <b>Our menu changes on a rotation basis every day</b>, so the dishes below are sample favourites that keep rotating across the week (Monday to Saturday). <b>Veg is served daily</b>; <b>non-veg is available only on Wednesdays — at lunch and dinner only.</b> Custom diet, Jain &amp; no-onion-no-garlic options available on request.
       </div>
 
+      <!-- Breakfast not available note -->
+      <div class="no-bf-note">⚠️ Please note: <strong>Breakfast is not available.</strong> We serve <strong>Lunch &amp; Dinner</strong> only — no breakfast meals or packages.</div>
+
       <!-- Meal-type Tabs -->
       <div class="day-tabs">
-        <button class="day-tab active" data-day="breakfast">🌅 Breakfast</button>
-        <button class="day-tab" data-day="lunch">🌞 Lunch</button>
+        <button class="day-tab active" data-day="lunch">🌞 Lunch</button>
         <button class="day-tab" data-day="dinner">🌙 Dinner</button>
       </div>
 
@@ -67,28 +69,8 @@
         <button class="nonveg" data-diet="nonveg"><span class="dot nonveg" style="width:14px;height:14px"></span> Non-Veg</button>
       </div>
 
-      <!-- ================= BREAKFAST ================= -->
-      <div class="day-panel active" data-day="breakfast">
-        <div class="meal meal--full">
-          <div class="meal-top breakfast"><span>🌅 Breakfast</span><span class="time">8:00 – 10:00 AM · come &amp; collect</span></div>
-          <div class="meal-body">
-            <div class="meal-subhead veg"><span class="dot veg"></span> Veg — served daily</div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Idli &amp; Sambar</b><small>Soft steamed idlis, hot sambar, coconut chutney</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Ven Pongal</b><small>Ghee pongal with coconut chutney &amp; sambar</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Medu Vada &amp; Sambar</b><small>Crispy vada, sambar, coconut chutney</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Rava Upma</b><small>Semolina upma with chutney</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Masala Dosa</b><small>Crispy dosa, potato masala, sambar, chutney</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Poori Masala</b><small>Fluffy pooris with potato masala</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Kara Dosa</b><small>Spicy dosa with onion &amp; chutney</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Sambar Vada &amp; Pongal</b><small>Vada in sambar with ven pongal</small></div></div>
-            <div class="dish" data-type="veg"><span class="dot veg"></span><div><b>Ghee Roast &amp; Chutney</b><small>Crispy ghee dosa with chutney &amp; sambar</small></div></div>
-          </div>
-          <div class="meal-foot"><span class="price">₹75 <small>/ plate · <small class="adv">order in advance</small></small></span></div>
-        </div>
-      </div>
-
       <!-- ================= LUNCH ================= -->
-      <div class="day-panel" data-day="lunch">
+      <div class="day-panel active" data-day="lunch">
         <div class="meal meal--full">
           <div class="meal-top lunch"><span>🌞 Lunch</span><span class="time">12:00 – 2:00 PM · come &amp; collect</span></div>
           <div class="meal-body">
@@ -104,7 +86,7 @@
             <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Fish Curry Meals</b><small>Steamed rice, nattu fish curry, rasam, cabbage poriyal · Wed only</small></div></div>
             <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Chicken Biryani Combo</b><small>Home-style chicken biryani, raita, boiled egg, brinjal curry · Wed only</small></div></div>
           </div>
-          <div class="meal-foot"><span class="price">₹120 <small>/ plate · <small class="adv">order in advance</small></small></span></div>
+          <div class="meal-foot"><span class="price">₹100 <small>/ plate · <small class="adv">order in advance</small></small></span></div>
         </div>
       </div>
 
@@ -125,14 +107,14 @@
             <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Pepper Chicken &amp; Parotta</b><small>2 parottas with dry pepper chicken · Wed only</small></div></div>
             <div class="dish" data-type="nonveg"><span class="dot nonveg"></span><div><b>Fish Fry &amp; Curd Rice</b><small>Nattu fish fry with curd rice &amp; pickle · Wed only</small></div></div>
           </div>
-          <div class="meal-foot"><span class="price">₹75 <small>/ plate · <small class="adv">order in advance</small></small></span></div>
+          <div class="meal-foot"><span class="price">₹60 <small>/ plate · <small class="adv">order in advance</small></small></span></div>
         </div>
       </div>
 
       <!-- Note + CTA -->
       <div style="text-align:center;margin-top:46px">
-        <p style="color:var(--muted);max-width:680px;margin:0 auto 22px">🌿 Menu rotates daily to keep meals exciting · Single-day &amp; single-week orders must be placed in advance · Subscribe for the full day and save more.</p>
-        <a class="btn btn--primary" href="#" data-open-sub>🍱 Subscribe — ₹4,999 / month</a>
+        <p style="color:var(--muted);max-width:680px;margin:0 auto 22px">🌿 Menu rotates daily to keep meals exciting · Single-day &amp; single-week orders must be placed in advance · Subscribe for lunch + dinner and save more. <strong>Breakfast is not available.</strong></p>
+        <a class="btn btn--primary" href="#" data-open-sub>🍱 Subscribe — ₹3,899 / month</a>
       </div>
     </div>
   </section>
@@ -160,10 +142,10 @@
       <div>
         <h5>Meals</h5>
         <ul>
-          <li>🌅 Breakfast (8–10 AM)</li>
           <li>🌞 Lunch (12–2 PM)</li>
           <li>🌙 Dinner (7–9 PM)</li>
           <li>🥗 Veg daily · Non-veg Wed</li>
+          <li>🚫 No breakfast service</li>
         </ul>
       </div>
       <div>
@@ -175,7 +157,10 @@
         </ul>
       </div>
     </div>
-    <div class="container footer-bottom">© <span id="year">2026</span> SS Home Foods · Namma Veetu Samayal · All rights reserved.</div>
+    <div class="container footer-bottom">
+      <div class="footer-tamil">வாழ்க வளமுடன்</div>
+      © <span id="year">2026</span> SS Home Foods · Namma Veetu Samayal · All rights reserved.
+    </div>
   </footer>
 
   <!-- ================= FLOATING WHATSAPP + CALL ================= -->
@@ -188,7 +173,7 @@
     </a>
   </div>
 
-  <button class="sub-fab" data-open-sub aria-label="Subscribe">🍱 <span class="lbl">Subscribe ₹4,999</span></button>
+  <button class="sub-fab" data-open-sub aria-label="Subscribe">🍱 <span class="lbl">Subscribe ₹3,899</span></button>
 
   <!-- SUBSCRIPTION MODAL -->
   <div class="modal-overlay" id="subModal" role="dialog" aria-modal="true" aria-label="Monthly subscription offer">
@@ -196,10 +181,10 @@
       <button class="modal-close" data-close-sub aria-label="Close">×</button>
       <div class="modal-left">
         <span class="tag">Best Value Plan</span>
-        <div class="big-price">₹4,999<small>/month</small></div>
-        <div class="strike">₹6,500</div>
+        <div class="big-price">₹3,899<small>/month</small></div>
+        <div class="strike">₹5,200</div>
         <ul>
-          <li>Breakfast + Lunch + Dinner</li>
+          <li>Lunch + Dinner (no breakfast)</li>
           <li>Monday to Saturday — 6 days</li>
           <li>Veg daily · Non-veg on Wednesdays</li>
           <li>Delivery available within 3 km (extra)</li>
@@ -207,8 +192,8 @@
         </ul>
       </div>
       <div class="modal-right">
-        <h3>Save big with our Full-Day Plan 🍱</h3>
-        <p>Get all three home-cooked meals fresh, every day Monday to Saturday — for less than ₹70 per meal. Limited slots in Anna Nagar West Extension.</p>
+        <h3>Save big with our Lunch + Dinner Plan 🍱</h3>
+        <p>Get both home-cooked meals — lunch and dinner — fresh every day Monday to Saturday for great value. Breakfast is not available. Limited slots in Anna Nagar West Extension.</p>
         <a class="btn btn--primary" href="contact.html" data-close-sub>Subscribe Now →</a>
         <a class="btn btn--ghost" href="#" data-close-sub>Keep Browsing Menu</a>
         <p class="form-note" style="text-align:center;margin-top:8px">No lock-in · Cancel anytime</p>
