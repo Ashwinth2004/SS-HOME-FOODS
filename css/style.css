@@ -28,7 +28,10 @@
 
 /* Tamil display text */
 .tamil { font-family: "Noto Sans Tamil", var(--font); font-weight: 800; }
-.hero-badge.tamil { font-size: 1.05rem; font-weight: 800; letter-spacing: .3px; padding: 9px 20px; }
+.hero-tamil {
+  display: block; font-weight: 800; line-height: 1.12; color: #ffe08a;
+  font-size: clamp(2.3rem, 5.6vw, 3.9rem); letter-spacing: .3px; margin-bottom: 16px;
+}
 .footer-tamil { font-family: "Noto Sans Tamil", var(--font); font-weight: 800; font-size: 1.3rem; color: var(--green-light); margin-bottom: 10px; letter-spacing: .3px; }
 .no-bf-note {
   max-width: 760px; margin: 0 auto 30px; text-align: center;
