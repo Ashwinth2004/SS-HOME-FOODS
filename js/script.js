@@ -15,6 +15,7 @@
     burger && burger.classList.remove("open");
     overlay && overlay.classList.remove("show");
     document.body.style.overflow = "";
+    document.body.classList.remove("nav-open");
   }
   if (burger && links) {
     burger.addEventListener("click", function () {
@@ -22,6 +23,7 @@
       burger.classList.toggle("open", open);
       overlay && overlay.classList.toggle("show", open);
       document.body.style.overflow = open ? "hidden" : "";
+      document.body.classList.toggle("nav-open", open);
     });
     links.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", closeNav);
